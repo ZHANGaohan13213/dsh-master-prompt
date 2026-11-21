@@ -1,0 +1,51 @@
+{
+  "name": "dsh-master-prompt",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Open native sub-conversations from any session; the main stays left, sub-conversations run as multi-tab right-sidebar chats, with a versioned shared prompt.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZHANGaohan13213/dsh-master-prompt"
+  },
+  "homepage": "https://github.com/ZHANGaohan13213/dsh-master-prompt#readme",
+  "keywords": [
+    "dsh-plugin",
+    "dsh",
+    "deepseek-harness",
+    "subagent",
+    "conversation",
+    "prompt"
+  ],
+  "engines": {
+    "dsh": ">=0.2.2-rc.5"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "README.md",
+    "LICENSE",
+    "icon.svg",
+    "assets/icon-180.png"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-sidebar-right"
+      ]
+    }
+  }
+}

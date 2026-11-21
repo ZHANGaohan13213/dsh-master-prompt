@@ -1,0 +1,6 @@
+# 主对话 / 副对话插件：只保留 Host 插件与客户端模块，不提供专属 Agent 模式。
+# 任意会话（任意模式、任意工作区）都可以在主对话工具栏点「副对话」。
+- insert:
+    - id: master-prompt
+      name: dsh-master-prompt
+      config: {}

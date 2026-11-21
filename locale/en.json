@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Main / sub-conversations",
+    "description": "Open sub-conversations from any session in any mode; the main stays left while native sub-conversations run as multi-tab right-sidebar chats, with a versioned master prompt.",
+    "detail": "docs/DETAIL.md"
+  }
+}
