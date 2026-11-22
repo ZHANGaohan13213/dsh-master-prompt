@@ -6,9 +6,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ZHANGaohan13213/dsh-master-prompt"
+    "url": "https://github.com/ZHANGaohan13213/my-deepseek-tool"
   },
-  "homepage": "https://github.com/ZHANGaohan13213/dsh-master-prompt#readme",
+  "homepage": "https://github.com/ZHANGaohan13213/my-deepseek-tool#readme",
   "keywords": [
     "dsh-plugin",
     "dsh",
