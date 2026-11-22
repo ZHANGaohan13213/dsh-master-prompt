@@ -2,11 +2,11 @@
 
 ## 1. Push the public GitHub repository
 
-Target repository: `https://github.com/ZHANGaohan13213/my-deepseek-tool` (public).
+Target repository: `https://github.com/ZHANGaohan13213/dsh-master-prompt` (public).
 
 ```sh
 cd D:\DeepSeekH\plugin-src\dsh-master-prompt-repo
-git remote add origin https://github.com/ZHANGaohan13213/my-deepseek-tool.git
+git remote add origin https://github.com/ZHANGaohan13213/dsh-master-prompt.git
 git push -u origin main --tags
 ```
 
@@ -15,8 +15,8 @@ After the push, add the `dsh-plugin` topic to the repository (required by the ma
 With GitHub CLI:
 
 ```sh
-gh repo create ZHANGaohan13213/my-deepseek-tool --public --source . --remote origin --push
-gh repo edit ZHANGaohan13213/my-deepseek-tool --add-topic dsh-plugin
+gh repo create ZHANGaohan13213/dsh-master-prompt --public --source . --remote origin --push
+gh repo edit ZHANGaohan13213/dsh-master-prompt --add-topic dsh-plugin
 ```
 
 ## 2. Submit to the DSH plugin market
@@ -24,8 +24,8 @@ gh repo edit ZHANGaohan13213/my-deepseek-tool --add-topic dsh-plugin
 The market reads `awesome-dsh-plugin/awesome-dsh-plugin`; listing is a pull request, not an upload.
 
 1. Fork `awesome-dsh-plugin/awesome-dsh-plugin`.
-2. Copy `market/ZHANGaohan13213__my-deepseek-tool.yml` into the fork at
-   `data/plugins/ZHANGaohan13213__my-deepseek-tool.yml`.
+2. Copy `market/ZHANGaohan13213__dsh-master-prompt.yml` into the fork at
+   `data/plugins/ZHANGaohan13213__dsh-master-prompt.yml`.
 3. Open a pull request against `main`.
 
 With GitHub CLI:
@@ -33,11 +33,11 @@ With GitHub CLI:
 ```sh
 gh repo fork awesome-dsh-plugin/awesome-dsh-plugin --clone=true
 # inside the clone:
-cp D:\DeepSeekH\plugin-src\dsh-master-prompt-repo\market\ZHANGaohan13213__my-deepseek-tool.yml data/plugins/
-git add data/plugins/ZHANGaohan13213__my-deepseek-tool.yml
-git commit -m "Add ZHANGaohan13213/my-deepseek-tool"
+cp D:\DeepSeekH\plugin-src\dsh-master-prompt-repo\market\ZHANGaohan13213__dsh-master-prompt.yml data/plugins/
+git add data/plugins/ZHANGaohan13213__dsh-master-prompt.yml
+git commit -m "Add ZHANGaohan13213/dsh-master-prompt"
 git push -u origin HEAD
-gh pr create --repo awesome-dsh-plugin/awesome-dsh-plugin --title "Add ZHANGaohan13213/my-deepseek-tool" --body "Adds the dsh-master-prompt plugin."
+gh pr create --repo awesome-dsh-plugin/awesome-dsh-plugin --title "Add ZHANGaohan13213/dsh-master-prompt" --body "Adds the dsh-master-prompt plugin."
 ```
 
 ## 3. Repository-age gate
